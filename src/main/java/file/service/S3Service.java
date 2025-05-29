@@ -34,7 +34,7 @@ public class S3Service {
     @Value("${cloud.aws.s3.bucket}")
     private String bucketName;
     
-    private final String DIR_NAME = "s3_data";
+    private final String DIR_NAME = "aws_data";
     
     // 파일 업로드  AmazonS3 클래스의 PutObject 메서드 사용
 	@Transactional
@@ -46,7 +46,7 @@ public class S3Service {
 		}
 		
 		// DB 저장 
-		String savePath = "C://CE//98.data//" + DIR_NAME;
+		String savePath = "C://CE//99.practice//app-with-basic-aws//" + DIR_NAME;
 		String attachmentOriginalFileName = file.getOriginalFilename();
 		UUID uuid = UUID.randomUUID();
 		String attachmentFileName = uuid.toString() + "_" + file.getOriginalFilename();
