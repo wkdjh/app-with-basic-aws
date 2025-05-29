@@ -7,7 +7,6 @@ tmp/
 *.bak
 *.swp
 *~.nib
-*.properties
 .settings/
 .loadpath
 .recommenders
@@ -91,6 +90,8 @@ tmp/
 hs_err_pid*
 replay_pid*
 
+Properties files,
+*.properties
 
 # End of https://www.toptal.com/developers/gitig
 
